@@ -26,10 +26,12 @@
 #include "frozen/bits/exceptions.h"
 #include "frozen/bits/constexpr_assert.h"
 
+#ifndef FROZEN_DONT_INCLUDE_STL
 #include <array>
 #include <utility>
 #include <string>
 #include <type_traits>
+#endif
 
 namespace frozen {
 
