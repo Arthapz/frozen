@@ -26,7 +26,7 @@
 #include "frozen/bits/exceptions.h"
 #include "frozen/bits/constexpr_assert.h"
 
-#ifndef FROZEN_DONT_INCLUDE_STL
+#ifndef FROZEN_USE_STD_MODULE
 #include <array>
 #include <utility>
 #include <string>
