@@ -71,7 +71,7 @@ if get_config("tests") then
         remove_files("tests/no_exceptions.cpp")
 
         add_cxxflags("/W3", "/WX", { tools = { "cl", "clang_cl" } })
-        add_cxxflags("-Wall", "-Wextra", "-Wpedantic", "-Werror", "-Wshadow", { tools = { "cl", "clang_cl" } })
+        add_cxxflags("-Wall", "-Wextra", "-Wpedantic", "-Werror", "-Wshadow", { tools = { "gcc", "clang" } })
 
         if is_plat("windows") then
             add_cxxflags("/W3", "/WX", { tools = "icc" })
@@ -100,7 +100,7 @@ if get_config("tests") then
         add_files("tests/no_exceptions.cpp")
 
         add_cxxflags("/W3", "/WX", { tools = { "cl", "clang_cl" } })
-        add_cxxflags("-Wall", "-Wextra", "-Wpedantic", "-Werror", "-Wshadow", { tools = { "cl", "clang_cl" } })
+        add_cxxflags("-Wall", "-Wextra", "-Wpedantic", "-Werror", "-Wshadow", { tools = { "gcc", "clang" } })
 
         if is_plat("windows") then
             add_cxxflags("/W3", "/WX", { tools = { "icc" } })
